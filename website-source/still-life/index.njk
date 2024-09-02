@@ -1,0 +1,20 @@
+---
+title: Still life
+layout: base
+eleventyNavigation:
+  key: Still life
+  order: 3
+---
+
+<div class="rs-column-header-wide">
+  <h1>
+    <em>Articles</em>
+  </h1>
+</div>
+
+<article class="rs-column flow">
+
+  {% set postlist = collections.article %}
+  {% include "post-list.njk" %}
+
+</article>
