@@ -20,9 +20,9 @@
 }
 
 .rs-paintings figure>picture {
-    margin: var(--space-xl);
+    margin: var(--space-m);
     border: 2px inset whitesmoke;
-    padding: var(--space-xs);
+    padding: var(--space-2xs);
 }
 
 .rs-paintings figure>picture>img {
