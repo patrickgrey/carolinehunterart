@@ -404,11 +404,11 @@ svg:not([width]):not([height]).rs-logo {
 */
 
 nav {
-    margin-block-start: var(--space-s);
+    margin-block-end: var(--space-m);
 }
 
 nav>ul {
-    font-family: var(--rs-font-mono);
+    /* font-family: var(--rs-font-mono); */
     position: relative;
     display: flex;
     justify-content: center;
@@ -422,7 +422,7 @@ nav>ul {
 @media screen and (min-width: 1200px) and (max-width:1700px) {
     nav>ul {
         justify-content: start;
-        margin-inline-start: var(--space-xs);
+        /* margin-inline-start: var(--space-xs); */
     }
 }
 
@@ -436,15 +436,21 @@ nav>ul>li>a:visited {
     position: relative;
     display: inline-block;
     /* font-weight: bold; */
-    font-size: var(--font-size-0);
+    font-size: var(--font-size-2);
     text-decoration: none;
     padding: var(--space-3xs) var(--space-s);
     /* padding-block-end: calc(var(--space-3xs) - 2px); */
-    color: var(--rs-colour-ec-dark-blue);
+    /* color: var(--rs-colour-ec-dark-blue);
     background-color: var(--rs-colour-nav-link-bg);
     transition: var(--rs-transition-short);
     border-block-end-style: solid;
-    border-block-end-width: var(--space-3xs);
+    border-block-end-width: var(--space-3xs); */
+}
+
+nav>ul>li>a:hover {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 1px;
 }
 
 nav>ul>li.is-active>a {
@@ -460,69 +466,6 @@ nav>ul>li.is-active>a {
     font-style: normal;
 }
 
-html {
-    --rs-highlight-current-values: var(--rs-colour-pink-values);
-    --rs-highlight-current: hsl(var(--rs-highlight-current-values) / 0.4);
-}
-
-html:has(nav>ul>li.is-active>a[href^="/code/"]) {
-    --rs-highlight-current-values: var(--rs-colour-green-values);
-    --rs-highlight-current: hsl(var(--rs-highlight-current-values) / 0.3);
-
-}
-
-html:has(nav>ul>li.is-active>a[href^="/article/"]) {
-    --rs-highlight-current-values: var(--rs-colour-red-values);
-    --rs-highlight-current: hsl(var(--rs-highlight-current-values) / 0.3);
-}
-
-html:has(nav>ul>li.is-active>a[href^="/small/"]) {
-    --rs-highlight-current-values: var(--rs-colour-yellow-values);
-    --rs-highlight-current: hsl(var(--rs-highlight-current-values) / 0.3);
-}
-
-html:has(nav>ul.rs-nav-sub>li.is-active>a[href^="/reading-list/"]),
-html:has(nav>ul.rs-nav-sub>li.is-active>a[href^="/tags/"]) {
-    --rs-highlight-current-values: var(--rs-colour-light-blue-values);
-    --rs-highlight-current: hsl(var(--rs-highlight-current-values) / 0.4);
-}
-
-/* html,
-body {
-    scrollbar-color: var(--rs-colour-ec-dark-blue) hsl(var(--rs-highlight-current-values) / 1);
-} */
-
-nav>ul>li>a[href="/"] {
-    border-block-end-color: var(--rs-colour-pink);
-}
-
-nav>ul>li>a[href^="/"]:hover {
-    background-color: hsl(var(--rs-colour-pink-values) / 0.4);
-}
-
-nav>ul>li>a[href^="/article/"] {
-    border-block-end-color: var(--rs-colour-red);
-}
-
-nav>ul>li>a[href^="/article/"]:hover {
-    background-color: hsl(var(--rs-colour-red-values) / 0.3);
-}
-
-nav>ul>li>a[href^="/small/"] {
-    border-block-end-color: var(--rs-colour-yellow);
-}
-
-nav>ul>li>a[href^="/small/"]:hover {
-    background-color: hsl(var(--rs-colour-yellow-values) / 0.3);
-}
-
-nav>ul>li>a[href^="/code/"] {
-    border-block-end-color: var(--rs-colour-green);
-}
-
-nav>ul>li>a[href^="/code/"]:hover {
-    background-color: hsl(var(--rs-colour-green-values) / 0.3);
-}
 
 nav>ul>li>p {
     position: absolute;
@@ -980,7 +923,11 @@ footer {
     /* color: white; */
     position: relative;
     margin-block-start: var(--space-xl);
-    padding-block-end: var(--space-m);
+    padding-block: var(--space-2xl);
+}
+
+footer p {
+    text-align: center;
 }
 
 footer a,
