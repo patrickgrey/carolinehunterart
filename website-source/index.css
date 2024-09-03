@@ -46,3 +46,19 @@
     margin-block-start: var(--space-m);
     /* display: none; */
 }
+
+.rs-caption-status {
+    background-color: var(--rs-colour-ec-dark-blue);
+    color: white;
+    padding-inline: 0.45rem;
+}
+
+.rs-figure-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.rs-caption-price {
+    font-weight: bold;
+}

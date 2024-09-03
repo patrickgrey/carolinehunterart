@@ -4,13 +4,13 @@
     </div>
     <figcaption>
 
-        {% if painting.caption != "" %}<p class="rs-caption-caption">{{painting.caption}}</p>{% endif %}
-        <p>
+        {% if painting.caption != "" %}<p class="rs-figure-caption">{{painting.caption}}</p>{% endif %}
+        <p class="rs-figure-data">
         {% if painting.status === "sold" %}
             <span class="rs-caption-status">{{painting.status}}</span>
         {% elif painting.status === "reserved" %}
-            {% if painting.price != "" %}<span class="rs-caption-price">{{painting.price}}</span>{% endif %}
             <span class="rs-caption-status">{{painting.status}}</span>
+            {% if painting.price != "" %}<span class="rs-caption-price">{{painting.price}}</span>{% endif %}
         {% else %}
             <span class="rs-caption-price">{{painting.price}}</span>
         {% endif %}
