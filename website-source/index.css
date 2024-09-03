@@ -11,9 +11,9 @@
 
 .rs-paintings figure {
     margin: 0;
-    border: 5px inset whitesmoke;
+    border: 5px inset #fff;
     box-shadow:
-        0px 0px 0px var(--space-xs) #eee,
+        0px 0px 0px var(--space-xs) whitesmoke,
         inset 0 var(--space-2xs) var(--space-2xs) calc(var(--space-2xs) * -1) #ccc,
         0 var(--space-m) var(--space-2xs) calc(var(--space-2xs) * -1) #ccc;
     /* padding: var(--space-xl); */
@@ -23,6 +23,19 @@
     margin: var(--space-xl);
     border: 2px inset whitesmoke;
     padding: var(--space-xs);
+}
+
+.rs-paintings figure>picture>img {
+    /* border: 2px inset rgba(0, 0, 0, 0.1); */
+    /* outline: 5px solid rgba(0, 0, 0, .2);
+    outline-offset: -5px; */
+    /* box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, .72) */
+    /* box-shadow: inset -19px -19px 17px -17px rgba(0, 0, 0, 1); */
+    /* box-shadow: inset -4px -1px 30px -7px rgba(0, 0, 0, 0.75); */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 4px;
 }
 
 .rs-paintings figure>figcaption {
