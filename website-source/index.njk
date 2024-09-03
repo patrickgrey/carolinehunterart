@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 
 <div class="rs-column-wide">
-    <h1>Caroline Hunter Art</h1>
+    <h1>Caroline Hunter Art</h1> 
 </div>
 
 <article>
@@ -20,6 +20,12 @@ almost timeless quality. Often juxtaposing vibrant summer flowers and grasses wi
 shells, seaweed or sea glass, her intimate connection to Scotland's wild places and a
 certain contemplative sensibility resonate throughout her work.</p>
 
+    </div>
+
+    <div class="rs-paintings">
+        {% for painting in paintings -%}
+            {% include "painting.njk" %}
+        {%- endfor %}
     </div>
 
 </article>

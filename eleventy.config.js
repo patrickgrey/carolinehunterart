@@ -16,7 +16,7 @@ import { transform } from 'lightningcss';
 
 export default async function (eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy("website-source/**/*.(css|js|json)");
+    eleventyConfig.addPassthroughCopy("website-source/**/*.(css|js|json|yml)");
     eleventyConfig.addPassthroughCopy("website-source/**/*.{svg,webp,avif,png,jpeg,jpg,ico,webmanifest,txt,ttf}");
 
 
@@ -24,7 +24,7 @@ export default async function (eleventyConfig) {
     //     "node_modules/@11ty/eleventy-fetch/**": "js/eleventy-fetch/"
     // });
     // Watch content images for the image pipeline.
-    eleventyConfig.addWatchTarget("website-source/**/*.{svg,webp,avif,png,jpeg,jpg,css,js}");
+    eleventyConfig.addWatchTarget("website-source/**/*.{svg,webp,avif,png,jpeg,jpg,css,js,yml}");
 
     // Official plugins
     eleventyConfig.addPlugin(pluginRss);

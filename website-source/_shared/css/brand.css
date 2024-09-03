@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
 /*
 ##     ##    ###    ########   ######
 ##     ##   ## ##   ##     ## ##    ##
@@ -85,7 +85,7 @@
     --rs-colour-link: var(--rs-colour-ec-light-blue);
     --rs-colour-link-visited: purple;
 
-    --rs-colour-footer-bg: var(--rs-colour-ec-dark-blue);
+    --rs-colour-footer-bg: whitesmoke;
 
     --rs-colour-pink-values: 330 100% 71%;
     --rs-colour-red-values: 0 100% 69%;
@@ -173,8 +173,8 @@ body {
 }
 
 footer *::selection {
-    background-color: var(--rs-colour-yellow);
-    color: var(--rs-colour-ec-dark-blue);
+    /* background-color: var(--rs-colour-yellow);
+    color: var(--rs-colour-ec-dark-blue); */
 }
 
 footer *:focus-visible {
@@ -818,7 +818,7 @@ nav>ul.rs-nav-sub>li>a::after {
 
 header,
 main {
-    border-inline-end: 3px solid hsl(var(--rs-highlight-current-values) / 1);
+    /* border-inline-end: 3px solid hsl(var(--rs-highlight-current-values) / 1); */
 }
 
 a[href="#bio"] {
@@ -977,7 +977,7 @@ button.rs-img-hero {
 
 footer {
     background-color: var(--rs-colour-footer-bg);
-    color: white;
+    /* color: white; */
     position: relative;
     margin-block-start: var(--space-xl);
     padding-block-end: var(--space-m);
@@ -985,7 +985,7 @@ footer {
 
 footer a,
 .rs-tac a:visited {
-    color: white;
+    /* color: white; */
 }
 
 footer>svg {
