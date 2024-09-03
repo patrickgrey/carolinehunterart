@@ -2,5 +2,20 @@
     <div class="rs-picture-container">
         <img src="./images/{{painting.file}}" alt="{{painting.altText}}" loading="lazy">
     </div>
-    <figcaption>{{painting.caption}}</figcaption>
+    <figcaption>
+
+        {% if painting.caption != "" %}<p class="rs-caption-caption">{{painting.caption}}</p>{% endif %}
+        <p>
+        {% if painting.status === "sold" %}
+            <span class="rs-caption-status">{{painting.status}}</span>
+        {% elif painting.status === "reserved" %}
+            {% if painting.price != "" %}<span class="rs-caption-price">{{painting.price}}</span>{% endif %}
+            <span class="rs-caption-status">{{painting.status}}</span>
+        {% else %}
+            <span class="rs-caption-price">{{painting.price}}</span>
+        {% endif %}
+{% if painting.size != "" %}<span class="rs-caption-size">{{painting.size}}</span>{% endif %}
+{% if painting.medium != "" %}<span class="rs-caption-medium">{{painting.medium}}</span>{% endif %}
+        </p>
+    </figcaption>
 </figure>

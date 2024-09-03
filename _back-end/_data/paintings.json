@@ -2,46 +2,82 @@
     {
         "file": "wp2ec1e9da_05_06.jpg",
         "altText": "This is alt text 2",
-        "caption": "This is the caption 2"
+        "caption": "This is the caption 2",
+        "size": "27cm x 34cm",
+        "medium": "oil",
+        "price": "£400",
+        "status": ""
     },
     {
         "file": "wp7dd85010_05_06.jpg",
         "altText": "This is alt text 3",
-        "caption": "This is the caption 3"
+        "caption": "This is the caption 3",
+        "size": "27cm x 34cm",
+        "medium": "oil",
+        "price": "£400",
+        "status": "sold"
     },
     {
         "file": "wp62d80d73_05_06.jpg",
         "altText": "This is alt text 4",
-        "caption": "This is the caption 4"
+        "caption": "This is the caption 4",
+        "size": "27cm x 34cm",
+        "medium": "oil",
+        "price": "£400",
+        "status": "sold"
     },
     {
         "file": "wp6108d945_05_06.jpg",
         "altText": "This is alt text 6",
-        "caption": "This is the caption 6"
+        "caption": "This is the caption 6",
+        "size": "27cm x 34cm",
+        "medium": "oil",
+        "price": "£400",
+        "status": ""
     },
     {
         "file": "wp931859dc_05_06.jpg",
         "altText": "This is alt text 7",
-        "caption": "This is the caption 7"
+        "caption": "This is the caption 7",
+        "size": "27cm x 34cm",
+        "medium": "oil",
+        "price": "£400",
+        "status": ""
     },
     {
         "file": "wpb5a34afc_05_06.jpg",
         "altText": "This is alt text 8",
-        "caption": "This is the caption 8"
+        "caption": "This is the caption 8",
+        "size": "27cm x 34cm",
+        "medium": "oil",
+        "price": "£400",
+        "status": "reserved"
     },
     {
         "file": "wpd9db035f_05_06.jpg",
         "altText": "This is alt text 10",
-        "caption": "This is the caption 10"
+        "caption": "This is the caption 10",
+        "size": "27cm x 34cm",
+        "medium": "oil",
+        "price": "£400",
+        "status": ""
     },
     {
         "file": "wpd370613f_05_06.jpg",
         "altText": "This is alt text 11",
-        "caption": "This is the caption 11"
+        "caption": "This is the caption 11",
+        "size": "27cm x 34cm",
+        "medium": "oil",
+        "price": "£400",
+        "status": ""
     },
     {
         "file": "wpddd196fd_05_06.jpg",
         "altText": "This is alt text 12",
-        "caption": "This is the caption 12"
+        "caption": "This is the caption 12",
+        "size": "27cm x 34cm",
+        "medium": "oil",
+        "price": "£400",
+        "status": ""
     }
 ]
