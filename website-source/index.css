@@ -1,6 +1,30 @@
 .rs-paintings {
     display: flex;
     flex-wrap: wrap;
+    gap: var(--space-l);
+    row-gap: var(--space-2xl);
     justify-content: space-around;
+    align-items: flex-start;
     padding-block-start: var(--space-xl);
+    margin: var(--space-m);
+}
+
+.rs-paintings figure {
+    margin: 0;
+    border: 5px inset whitesmoke;
+    box-shadow:
+        0px 0px 0px var(--space-xs) #eee,
+        inset 0 var(--space-2xs) var(--space-2xs) calc(var(--space-2xs) * -1) #ccc,
+        0 var(--space-m) var(--space-2xs) calc(var(--space-2xs) * -1) #ccc;
+    /* padding: var(--space-xl); */
+}
+
+.rs-paintings figure>picture {
+    margin: var(--space-xl);
+    border: 2px inset whitesmoke;
+    padding: var(--space-xs);
+}
+
+.rs-paintings figure>figcaption {
+    display: none;
 }
