@@ -421,7 +421,7 @@ nav>ul {
 
 @media screen and (min-width: 1200px) and (max-width:1700px) {
     nav>ul {
-        justify-content: start;
+        /* justify-content: start; */
         /* margin-inline-start: var(--space-xs); */
     }
 }
