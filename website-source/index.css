@@ -5,7 +5,7 @@
     /* row-gap: var(--space-2xl); */
     justify-content: space-around;
     align-items: flex-start;
-    padding-block-start: var(--space-xl);
+    padding-block-start: var(--space-l);
     margin: var(--space-m);
     margin-block-start: 0;
 }
@@ -83,7 +83,7 @@ label[for="rsFrameToggle"] {
     display: block;
     width: fit-content;
     border-radius: 9999px;
-    margin: var(--space-l) auto 0 auto;
+    margin: var(--space-xl) auto 0 auto;
     padding: var(--space-2xs) var(--space-s);
     background-color: var(--rs-colour-light-grey);
     cursor: pointer;

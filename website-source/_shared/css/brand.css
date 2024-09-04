@@ -116,7 +116,7 @@
     --rs-outline-reverse: 2px dashed var(--rs-colour-yellow)
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --rs-colour-ec-dark-blue: white;
         --rs-colour-page-bg: #1E3232;
@@ -131,7 +131,7 @@
         --rs-colour-footer-bg: #092121;
         --rs-colour-nav-link-hover: #003366;
     }
-}
+} */
 
 /*
 ########     ###     ######  ########
