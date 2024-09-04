@@ -35,9 +35,18 @@ jsFiles: []
         <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
         <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        {# <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> #}
+
+        <style>
+            @font-face {
+                font-family: "Playfair Display";
+                src:
+                    local("Playfair Display"),
+                    url("/_shared/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+            }
+        </style>
 
         {% set cssHighlight %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endset %}
         {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
@@ -69,6 +78,7 @@ jsFiles: []
         {% endif %}
 
         {% for file in cssFiles %}
+            <link rel="preload" href="{{file}}" as="style">
             <link rel="stylesheet" href="{{file}}">
         {% endfor %}
 

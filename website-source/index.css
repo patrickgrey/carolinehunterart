@@ -23,7 +23,7 @@
 .rs-paintings.rs-no-frame .rs-picture-container {
     border: 0;
     box-shadow: none;
-    transition: all 0.3s ease-out;
+    /* transition: all 0.3s ease-out; */
 }
 
 .rs-paintings .rs-picture-container>picture {
@@ -37,7 +37,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    transition: all 0.3s ease-out;
+    /* transition: all 0.3s ease-out; */
 }
 
 .rs-paintings .rs-picture-container>picture>img {
@@ -50,7 +50,7 @@
 
 .rs-paintings.rs-no-frame .rs-picture-container>picture>img {
     max-width: 700px;
-    transition: all 0.3s ease-out;
+    /* transition: all 0.3s ease-out; */
 }
 
 .rs-paintings figure {

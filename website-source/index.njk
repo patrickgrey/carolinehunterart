@@ -36,8 +36,10 @@ certain contemplative sensibility resonate throughout her work.</p>
     </div>
 
     <div class="rs-paintings">
+        {% set paintingCount = 1 %}
         {% for painting in paintings -%}
             {% include "painting.njk" %}
+            {% set paintingCount = paintingCount + 1 %}
         {%- endfor %}
     </div>
 

@@ -1,6 +1,6 @@
 <figure>
     <div class="rs-picture-container">
-        <img src="./images/{{painting.file}}" alt="{{painting.altText}}" loading="lazy">
+        <img src="./images/{{painting.file}}" alt="{{painting.altText}}" {% if paintingCount > 6 %}loading="lazy"{% endif %}>
     </div>
     <figcaption>
 
