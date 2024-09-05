@@ -39,15 +39,46 @@ jsFiles: []
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> #}
 
+<link rel="preload" href="/_shared/fonts/playfair-display-v37-latin-regular.woff2" as="font/woff2" crossorigin>
+<link rel="preload" href="/_shared/fonts/playfair-display-v37-latin-italic.woff2" as="font/woff2" crossorigin>
+<link rel="preload" href="/_shared/fonts/playfair-display-v37-latin-700.woff2" as="font/woff2" crossorigin>
+<link rel="preload" href="/_shared/fonts/playfair-display-v37-latin-700italic.woff2" as="font/woff2" crossorigin>
         <style>
+            /* playfair-display-regular - latin */
             @font-face {
-                font-family: "Playfair Display";
-                font-display: swap;
-                src:
-                    local("Playfair Display"),
-                    url("/_shared/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+            font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/_shared/fonts/playfair-display-v37-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            }
+            /* playfair-display-italic - latin */
+            @font-face {
+            font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 400;
+            src: url('/_shared/fonts/playfair-display-v37-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            }
+            /* playfair-display-700 - latin */
+            @font-face {
+            font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            src: url('/_shared/fonts/playfair-display-v37-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            }
+            /* playfair-display-700italic - latin */
+            @font-face {
+            font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 700;
+            src: url('/_shared/fonts/playfair-display-v37-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
             }
         </style>
+
+        {# https://blog.sentry.io/web-fonts-and-the-dreaded-cumulative-layout-shift/ #}
 
         {% set cssHighlight %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endset %}
         {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
