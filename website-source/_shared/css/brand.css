@@ -63,7 +63,7 @@
         Consolas,
         'DejaVu Sans Mono',
         monospace;
-    --rs-font-serif: "Playfair Display", 'Iowan Old Style',
+    --rs-font-serif: "Playfair Display", "Playfair Display-fallback", 'Iowan Old Style',
         'Palatino Linotype',
         'URW Palladio L',
         P052,
